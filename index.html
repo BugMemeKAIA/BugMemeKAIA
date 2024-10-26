@@ -20,18 +20,27 @@
         }
 
         .header {
-            display: flex;
+            position: relative; /* 자식 요소의 절대 위치 지정을 위해 */
             width: 100%;
-            justify-content: flex-start; /* 왼쪽 정렬 */
+            display: flex;
+            justify-content: center; /* 중앙 정렬 */
         }
 
         .header img {
-            max-width: 33.33%; /* 3등분 */
+            max-width: 100%; /* 전체 너비에 맞춰 조정 */
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute; /* 부모 요소에 대해 절대 위치 지정 */
+            top: 0;
+            left: 0;
+            width: 33.33%; /* 3등분 */
             height: auto;
         }
 
         .shake {
-            animation: shake 0.5s infinite;
+            animation: shake 1s forwards; /* 1초 동안 흔들리게 설정 */
         }
 
         @keyframes shake {
@@ -72,8 +81,8 @@
 </head>
 <body>
     <div class="header">
-        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/bug.png" alt="Bug Image" class="shake">
         <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/bug_meme_logo.png" alt="Bug Meme Logo">
+        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/bug.png" alt="Bug Image" class="overlay" id="overlayImage">
     </div>
     <h1>Welcome to My .fun Website!</h1>
     <p>This is a simple webpage using GitHub Pages.</p>
@@ -81,8 +90,12 @@
 
     <script>
         setInterval(() => {
-            document.querySelector('.shake').classList.toggle('shake');
-        }, 3000); // 3초 간격으로 흔들기
+            const overlay = document.getElementById('overlayImage');
+            overlay.classList.add('shake');
+            setTimeout(() => {
+                overlay.classList.remove('shake');
+            }, 1000); // 흔들기 1초 동안 유지
+        }, 4000); // 3초 대기 후 흔들기
     </script>
 </body>
 </html>
