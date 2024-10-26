@@ -31,26 +31,6 @@
             height: auto;
         }
 
-        .overlay {
-            position: absolute; /* 부모 요소에 대해 절대 위치 지정 */
-            top: 20%; /* 화면 높이의 15% 위치 */
-            left: 15%; /* 화면 너비의 20% 위치 */
-            width: 100px; /* 원래보다 더 작게 조정 */
-            height: auto;
-        }
-
-        .shake {
-            animation: shake 1s forwards; /* 1초 동안 흔들리게 설정 */
-        }
-
-        @keyframes shake {
-            0% { transform: translateX(0); }
-            25% { transform: translateX(-5px); }
-            50% { transform: translateX(5px); }
-            75% { transform: translateX(-5px); }
-            100% { transform: translateX(0); }
-        }
-
         h1 {
             font-size: 3em;
             margin-bottom: 0.5em;
@@ -82,25 +62,10 @@
 </head>
 <body>
     <div class="header">
-        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/bug_meme_logo.png" alt="Bug Meme Logo">
-        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/bug.png" alt="Bug Image" class="overlay" id="overlayImage">
+        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/pc_logo.png" alt="PC Logo">
     </div>
     <h1>Welcome to My .fun Website!</h1>
     <p>This is a simple webpage using GitHub Pages.</p>
     <button class="button" onclick="alert('Thanks for visiting!')">Click Me!</button>
-
-    <script>
-        // 흔들기 애니메이션을 실행하고 4초 대기
-        const overlay = document.getElementById('overlayImage');
-        overlay.classList.add('shake');
-        setTimeout(() => {
-            setInterval(() => {
-                overlay.classList.add('shake');
-                setTimeout(() => {
-                    overlay.classList.remove('shake');
-                }, 1000); // 흔들기 1초 동안 유지
-            }, 4000); // 3초 대기 후 흔들기
-        }, 1000); // 페이지 로드 후 1초 뒤에 시작
-    </script>
 </body>
 </html>
