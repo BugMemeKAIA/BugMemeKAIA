@@ -7,21 +7,39 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            margin: 0; /* 기본 여백 제거 */
-            padding: 0; /* 기본 패딩 제거 */
+            margin: 0;
+            padding: 0;
             background-color: #282c34;
             color: white;
             text-align: center;
             display: flex;
             flex-direction: column;
-            align-items: center; /* 가로 중앙 정렬 */
-            justify-content: flex-start; /* 세로 방향으로 상단 정렬 */
+            align-items: center;
+            justify-content: flex-start;
             height: 100vh;
         }
 
-        img {
-            max-width: 100%;
+        .header {
+            display: flex;
+            width: 100%;
+            justify-content: flex-start; /* 왼쪽 정렬 */
+        }
+
+        .header img {
+            max-width: 33.33%; /* 3등분 */
             height: auto;
+        }
+
+        .shake {
+            animation: shake 0.5s infinite;
+        }
+
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0); }
         }
 
         h1 {
@@ -53,9 +71,18 @@
     </style>
 </head>
 <body>
-    <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/bug_meme_logo.png" alt="Bug Meme Logo">
+    <div class="header">
+        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/bug.png" alt="Bug Image" class="shake">
+        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/bug_meme_logo.png" alt="Bug Meme Logo">
+    </div>
     <h1>Welcome to My .fun Website!</h1>
     <p>This is a simple webpage using GitHub Pages.</p>
     <button class="button" onclick="alert('Thanks for visiting!')">Click Me!</button>
+
+    <script>
+        setInterval(() => {
+            document.querySelector('.shake').classList.toggle('shake');
+        }, 3000); // 3초 간격으로 흔들기
+    </script>
 </body>
 </html>
