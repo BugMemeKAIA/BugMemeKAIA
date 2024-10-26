@@ -60,11 +60,11 @@
         p {
             font-size: 1.5em;
             margin: 0;
-            color: #091c2b; /* 중요 문단 색상 변경 */
+            color: #bdaba1; /* 작은 글씨 색상 고정 */
         }
 
         .button {
-            background-color: #61dafb;
+            background-color: #f39d08; /* 버튼 색상 고정 */
             color: #282c34;
             padding: 10px 20px;
             border: none;
@@ -90,13 +90,17 @@
     <button class="button" onclick="alert('Thanks for visiting!')">Click Me!</button>
 
     <script>
-        setInterval(() => {
-            const overlay = document.getElementById('overlayImage');
-            overlay.classList.add('shake');
-            setTimeout(() => {
-                overlay.classList.remove('shake');
-            }, 1000); // 흔들기 1초 동안 유지
-        }, 4000); // 3초 대기 후 흔들기
+        // 흔들기 애니메이션을 실행하고 4초 대기
+        const overlay = document.getElementById('overlayImage');
+        overlay.classList.add('shake');
+        setTimeout(() => {
+            setInterval(() => {
+                overlay.classList.add('shake');
+                setTimeout(() => {
+                    overlay.classList.remove('shake');
+                }, 1000); // 흔들기 1초 동안 유지
+            }, 4000); // 3초 대기 후 흔들기
+        }, 1000); // 페이지 로드 후 1초 뒤에 시작
     </script>
 </body>
 </html>
