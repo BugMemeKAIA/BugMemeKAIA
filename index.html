@@ -20,43 +20,44 @@
         }
 
         .header {
-            position: relative; /* 자식 요소의 절대 위치 지정을 위해 */
             width: 100%;
             display: flex;
-            justify-content: center; /* 중앙 정렬 */
+            justify-content: center;
         }
 
         .header img {
-            max-width: 100%; /* 전체 너비에 맞춰 조정 */
+            max-width: 100%;
             height: auto;
         }
 
         h1 {
             font-size: 3em;
-            margin-bottom: 0.5em;
-            color: #091c2b; /* 중요 문단 색상 변경 */
+            margin-bottom: 0.3em;
+            color: #091c2b;
         }
 
         p {
             font-size: 1.5em;
             margin: 0;
-            color: #bdaba1; /* 작은 글씨 색상 고정 */
-            white-space: pre-wrap; /* 줄바꿈을 위해 추가 */
+            line-height: 1.2;
+            color: #bdaba1;
+            white-space: pre-wrap;
         }
 
         .footer-image {
-            margin-top: auto; /* 상단 요소들과의 간격 조정 */
-            margin-bottom: 20px; /* 하단 여백 추가 */
-            max-width: 100%; /* 화면 크기에 맞춰 조정 */
-            height: auto; /* 비율 유지 */
+            margin-top: auto;
+            margin-bottom: 10px; /* 이미지 아래 여백 조정 */
+            max-width: 100%;
+            height: auto;
         }
 
         .footer-text {
             font-size: 1.2em;
-            margin-top: 20px;
-            color: #091c2b; /* 강조 텍스트 색상 */
+            margin-top: 10px; /* 문단 간격 줄임 */
+            margin-bottom: 20px; /* 하단 추가 여백 */
+            color: #091c2b;
             max-width: 90%;
-            line-height: 1.4;
+            line-height: 1.3;
         }
     </style>
 </head>
