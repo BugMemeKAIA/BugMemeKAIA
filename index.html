@@ -22,8 +22,8 @@
 
         .header img {
             width: 100%;
-            height: auto; /* Allow the image to scale while maintaining aspect ratio */
-            max-width: none; /* Ensure the image stretches fully */
+            max-width: 800px;
+            height: auto;
         }
 
         .section {
@@ -85,7 +85,7 @@
             color: #333; /* Gray text color for the button */
             border: none;
             border-radius: 5px;
-            padding: 8px 16px; /* Reduced height */
+            padding: 8px 20px; /* Height reduced */
             font-size: 1em;
             cursor: pointer;
             margin-top: 15px;
@@ -95,6 +95,11 @@
             background-color: #e68a00; /* Darker orange on hover */
         }
     </style>
+    <script>
+        function showPreparingPopup() {
+            alert("Preparing to Open");
+        }
+    </script>
 </head>
 <body>
     <div class="header">
@@ -111,8 +116,7 @@
            If BUG has one fan, it is me.<br>
            If BUG has no fans, I don’t exist.</p>
         <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/bug_fight.png" alt="Bug Fight Image" style="width: 100%; max-width: 600px; margin-top: 20px;">
-        <p>We carry forward the "spirit of unity among holders" demonstrated during the merger process between Finschia and Klay.<br>
-           We are supporters of both KAIA and BUG_HOLE.</p>
+        <p>We carry forward the "spirit of unity among holders" demonstrated during the merger process between Finschia and Klay.<br> We are supporters of both KAIA and BUG_HOLE.</p>
     </div>
 
     <div class="footer">
@@ -123,7 +127,7 @@
         <div class="community">
             <a href="https://x.com/BugMemeKAIA" target="_blank">X</a>
             <a href="https://open.kakao.com/o/gvSEsMRg" target="_blank">KAKAO</a>
-            <a href="#">TELEGRAM</a>
+            <a href="#" onclick="showPreparingPopup()">TELEGRAM</a> <!-- 수정된 부분 -->
         </div>
 
         <!-- Buy Button -->
