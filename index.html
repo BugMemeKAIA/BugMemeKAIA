@@ -22,7 +22,6 @@
 
         /* 전체 화면 배경 */
         .section {
-            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -39,11 +38,11 @@
         }
 
         /* 반응형 이미지 */
-        .section img {
+        img {
             max-width: 90%;
             height: auto;
             border-radius: 8px;
-            margin-top: 20px;
+            margin: 20px 0;
         }
 
         /* 텍스트 스타일 */
@@ -73,6 +72,11 @@
     </style>
 </head>
 <body>
+    <!-- 상단 이미지 섹션 -->
+    <div class="section visible" id="top-image">
+        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/pc_logo.png" alt="Top BUG Image">
+    </div>
+
     <!-- 첫 번째 섹션: 메인 소개 -->
     <div class="section" id="intro">
         <h1>Who is BUG</h1>
@@ -85,12 +89,12 @@
         <p>If XXX has no fans, I don’t exist.</p>
     </div>
 
-    <!-- 두 번째 섹션: 이미지 -->
-    <div class="section" id="main-image">
-        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/pc_logo.png" alt="Main BUG Image">
+    <!-- 중간 이미지 섹션 -->
+    <div class="section" id="middle-image">
+        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/bug_fight.png" alt="Middle BUG Image">
     </div>
 
-    <!-- 세 번째 섹션: 소개 및 설명 -->
+    <!-- 마지막 섹션: 소개 및 설명 -->
     <div class="section last-section" id="supporters">
         <h1>We carry forward the "spirit of unity among holders"</h1>
         <p>demonstrated during the merger process between Finschia and Klay.</p>
