@@ -44,62 +44,46 @@
         }
 
         .footer {
-            margin-top: auto; /* 하단으로 밀기 */
-            padding: 20px; /* 패딩 추가 */
-            background-color: #091c2b; /* 배경색 변경 */
-            color: white; /* 글자 색상 변경 */
+            background-color: #091c2b; /* 바닥 부분 색상 */
+            padding: 20px;
             width: 100%;
-            text-align: center; /* 중앙 정렬 */
+            position: relative;
+            bottom: 0;
+            text-align: center;
         }
 
-        .footer h2 {
-            margin: 10px 0; /* 위 아래 여백 추가 */
+        .footer h2, .footer p {
+            margin: 5px 0; /* 문단 간격 조정 */
+            color: white; /* 글자색 하양 */
         }
 
         .community {
             display: flex;
-            justify-content: center; /* 중앙 정렬 */
-            gap: 20px; /* 요소 간격 추가 */
-        }
-
-        .community a {
-            color: white; /* 링크 색상 */
-            text-decoration: none; /* 밑줄 제거 */
-        }
-
-        .community a:hover {
-            text-decoration: underline; /* 마우스 오버 시 밑줄 추가 */
+            justify-content: center;
+            gap: 20px; /* 아이콘 간격 */
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/pc_logo.png" alt="PC Logo">
+        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/pc_logo.png" alt="Logo">
     </div>
-    
     <h1>Who is BUG</h1>
-    <p>
-        For the blind, He is the vision.<br>
-        For the hungry, He is the chef.<br>
-        For the thirsty, He is the water.<br>
-        If BUG thinks, I agree.<br>
-        If BUG speaks, I’m listening.<br>
-        If BUG has one fan, it is me.<br>
-        If BUG has no fans, I don’t exist.
-    </p>
-    
-    <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/bug_fight.png" alt="Bug Fight" style="max-width: 100%; height: auto;">
-    
-    <h2 style="color: #091c2b;">We carry forward the "spirit of unity among holders"<br> demonstrated during the merger process between Finschia and Klay.</h2>
+    <p>For the blind, He is the vision.<br>
+    For the hungry, He is the chef.<br>
+    For the thirsty, He is the water.<br>
+    If BUG thinks, I agree.<br>
+    If BUG speaks, I’m listening.<br>
+    If BUG has one fan, it is me.<br>
+    If BUG has no fans, I don’t exist.</p>
 
     <div class="footer">
-        <h2>Contract Address</h2>
-        <p>0x0f9d34aafe97717e4c599c226444ba1e5846a85d</p>
-        <h2>Community</h2>
+        <h2>We carry forward the "spirit of unity among holders" demonstrated during the merger process between Finschia and Klay.</h2>
+        <h2>Contract Address: 0x0f9d34aafe97717e4c599c226444ba1e5846a85d</h2>
         <div class="community">
             <a href="https://x.com/BugMemeKAIA">X</a>
             <a href="https://open.kakao.com/o/gvSEsMRg">KAKAO</a>
-            <a href="#">TELEGRAM</a> <!-- 링크 없음 -->
+            <span>TELEGRAM</span>
         </div>
     </div>
 </body>
