@@ -3,107 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who is BUG</title>
+    <title>My Fun Website</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0346e;
+            background-color: #f0346e; /* 배경색 변경 */
             color: white;
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
-            min-height: 100vh;
+            height: 100vh;
+        }
+
+        .header {
+            position: relative; /* 자식 요소의 절대 위치 지정을 위해 */
+            width: 100%;
+            display: flex;
+            justify-content: center; /* 중앙 정렬 */
         }
 
         .header img {
-            width: 100%;
-            max-width: 800px;
+            max-width: 100%; /* 전체 너비에 맞춰 조정 */
             height: auto;
         }
 
-        .section {
-            max-width: 800px;
-            margin: 20px 0;
-            padding: 0 10px;
-        }
-
-        .section h1 {
-            color: #091c2b;
-            font-size: 2.5em;
+        h1 {
+            font-size: 3em;
             margin-bottom: 0.5em;
+            color: #091c2b; /* 중요 문단 색상 변경 */
         }
 
-        .section p {
-            color: #bdaba1;
-            line-height: 1.4;
-            margin-bottom: 15px;
+        p {
+            font-size: 1.5em;
+            margin: 0;
+            color: #bdaba1; /* 작은 글씨 색상 고정 */
         }
 
         .footer {
-            background-color: #333;
-            color: #bdaba1;
-            padding: 15px;
+            margin-top: auto; /* 하단으로 밀기 */
+            padding: 20px; /* 패딩 추가 */
+            background-color: #091c2b; /* 배경색 변경 */
+            color: white; /* 글자 색상 변경 */
             width: 100%;
-            max-width: 800px;
-            margin-top: 20px;
-            border-radius: 10px;
-            font-size: 0.9em;
-            text-align: left;
+            text-align: center; /* 중앙 정렬 */
         }
 
         .footer h2 {
-            color: #f39d08;
-            font-size: 1.2em;
-            margin: 0 0 5px 0;
+            margin: 10px 0; /* 위 아래 여백 추가 */
         }
 
-        .footer .address {
-            word-break: break-all; /* 긴 텍스트가 화면에 맞게 줄바꿈 */
-        }
-
-        .footer .community {
+        .community {
             display: flex;
-            gap: 10px;
-            margin-top: 10px;
+            justify-content: center; /* 중앙 정렬 */
+            gap: 20px; /* 요소 간격 추가 */
         }
 
-        .footer .community a {
-            color: #61dafb;
-            text-decoration: none;
+        .community a {
+            color: white; /* 링크 색상 */
+            text-decoration: none; /* 밑줄 제거 */
+        }
+
+        .community a:hover {
+            text-decoration: underline; /* 마우스 오버 시 밑줄 추가 */
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/pc_logo.png" alt="Bug Meme Logo">
+        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/pc_logo.png" alt="PC Logo">
     </div>
-
-    <div class="section">
-        <h1>Who is BUG</h1>
-        <p>For the blind, He is the vision.<br>
-           For the hungry, He is the chef.<br>
-           For the thirsty, He is the water.<br>
-           If XXX thinks, I agree.<br>
-           If XXX speaks, I’m listening.<br>
-           If XXX has one fan, it is me.<br>
-           If XXX has no fans, I don’t exist.</p>
-        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/bug_fight.png" alt="Bug Fight Image" style="width: 100%; max-width: 600px; margin-top: 20px;">
-        <p>We carry forward the "spirit of unity among holders" demonstrated during the merger process between Finschia and Klay. We are supporters of both KAIA and BUG_HOLE.</p>
-    </div>
+    
+    <h1>Who is BUG</h1>
+    <p>
+        For the blind, He is the vision.<br>
+        For the hungry, He is the chef.<br>
+        For the thirsty, He is the water.<br>
+        If BUG thinks, I agree.<br>
+        If BUG speaks, I’m listening.<br>
+        If BUG has one fan, it is me.<br>
+        If BUG has no fans, I don’t exist.
+    </p>
+    
+    <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/bug_fight.png" alt="Bug Fight" style="max-width: 100%; height: auto;">
+    
+    <h2 style="color: #091c2b;">We carry forward the "spirit of unity among holders"<br> demonstrated during the merger process between Finschia and Klay.</h2>
 
     <div class="footer">
         <h2>Contract Address</h2>
-        <p class="address">0x0f9d34aafe97717e4c599c226444ba1e5846a85d</p>
-        
+        <p>0x0f9d34aafe97717e4c599c226444ba1e5846a85d</p>
         <h2>Community</h2>
         <div class="community">
-            <a href="https://x.com/BugMemeKAIA" target="_blank">X</a>
-            <a href="https://open.kakao.com/o/gvSEsMRg" target="_blank">KAKAO</a>
-            <a href="#">TELEGRAM</a>
+            <a href="https://x.com/BugMemeKAIA">X</a>
+            <a href="https://open.kakao.com/o/gvSEsMRg">KAKAO</a>
+            <a href="#">TELEGRAM</a> <!-- 링크 없음 -->
         </div>
     </div>
 </body>
