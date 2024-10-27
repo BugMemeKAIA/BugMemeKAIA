@@ -17,7 +17,7 @@
             align-items: center;
             justify-content: flex-start;
             min-height: 100vh;
-            overflow-x: hidden; /* 추가: 가로 스크롤 방지 */
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
         .header img {
@@ -58,14 +58,14 @@
         }
 
         .footer h2 {
-            color: #f39d08;
+            color: #f39d08; /* Orange color for headings */
             font-size: 1.2em;
             margin: 0 0 5px 0;
         }
 
         .footer .address {
-            word-break: break-all; /* 긴 텍스트가 화면에 맞게 줄바꿈 */
-            font-size: 0.85em; /* 줄여서 모바일에서의 가로 넘침 방지 */
+            word-break: break-all; /* Allow long addresses to break */
+            font-size: 0.85em; /* Slightly smaller font size for address */
         }
 
         .footer .community {
@@ -78,6 +78,21 @@
         .footer .community a {
             color: #61dafb;
             text-decoration: none;
+        }
+
+        .buy-button {
+            background-color: #f39d08; /* Orange color for the button */
+            color: #333; /* Gray text color for the button */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .buy-button:hover {
+            background-color: #e68a00; /* Darker orange on hover */
         }
     </style>
 </head>
@@ -109,6 +124,11 @@
             <a href="https://open.kakao.com/o/gvSEsMRg" target="_blank">KAKAO</a>
             <a href="#">TELEGRAM</a>
         </div>
+
+        <!-- Buy Button -->
+        <a href="https://swapscanner.io/pro/swap?from=0x0000000000000000000000000000000000000000&to=0x0f9d34aafe97717e4c599c226444ba1e5846a85d&chartReady=true" target="_blank">
+            <button class="buy-button">BUY</button>
+        </a>
     </div>
 </body>
 </html>
