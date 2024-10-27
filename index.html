@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Who is BUG</title>
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -22,8 +24,8 @@
 
         .header img {
             width: 100%;
-            max-width: 800px;
             height: auto;
+            object-fit: cover; /* Maintain aspect ratio and cover the area */
         }
 
         .section {
@@ -95,18 +97,13 @@
             background-color: #e68a00; /* Darker orange on hover */
         }
     </style>
-    <script>
-        function showPreparingPopup() {
-            alert("Preparing to Open");
-        }
-    </script>
 </head>
 <body>
     <div class="header">
         <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/pc_logo.png" alt="Bug Meme Logo">
     </div>
 
-    <div class="section">
+    <div class="section" data-aos="fade-up">
         <h1>Who is BUG</h1>
         <p>For the blind, He is the vision.<br>
            For the hungry, He is the chef.<br>
@@ -119,7 +116,7 @@
         <p>We carry forward the "spirit of unity among holders" demonstrated during the merger process between Finschia and Klay.<br> We are supporters of both KAIA and BUG_HOLE.</p>
     </div>
 
-    <div class="footer">
+    <div class="footer" data-aos="fade-up">
         <h2>Contract Address</h2>
         <p class="address">0x0f9d34aafe97717e4c599c226444ba1e5846a85d</p>
         
@@ -127,7 +124,7 @@
         <div class="community">
             <a href="https://x.com/BugMemeKAIA" target="_blank">X</a>
             <a href="https://open.kakao.com/o/gvSEsMRg" target="_blank">KAKAO</a>
-            <a href="#" onclick="showPreparingPopup()">TELEGRAM</a> <!-- 수정된 부분 -->
+            <a href="#" onclick="showPreparingPopup()">TELEGRAM</a>
         </div>
 
         <!-- Buy Button -->
@@ -135,5 +132,14 @@
             <button class="buy-button">BUY</button>
         </a>
     </div>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS
+        function showPreparingPopup() {
+            alert("Preparing to Open");
+        }
+    </script>
 </body>
 </html>
