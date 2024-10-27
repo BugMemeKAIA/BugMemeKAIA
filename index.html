@@ -7,10 +7,15 @@
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
+        /* Prevent horizontal scroll on the entire page */
+        html, body {
+            overflow-x: hidden;
             margin: 0;
             padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
             background-color: #f0346e;
             color: white;
             text-align: center;
@@ -19,7 +24,6 @@
             align-items: center;
             justify-content: flex-start;
             min-height: 100vh;
-            overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
         .header img {
@@ -32,7 +36,6 @@
             max-width: 800px;
             margin: 20px 0;
             padding: 0 10px;
-            overflow-x: hidden;
         }
 
         .section h1 {
