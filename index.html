@@ -3,146 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BUG Upgrade</title>
+    <title>Who is BUG</title>
     <style>
-        /* 기본 설정 */
-        * {
-            box-sizing: border-box;
+        body {
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
-            color: #091c2b;
-        }
-
-        body {
             background-color: #f0346e;
             color: white;
             text-align: center;
-        }
-
-        /* 전체 화면 배경 */
-        .section {
             display: flex;
-            align-items: center;
-            justify-content: center;
             flex-direction: column;
-            padding: 20px;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.8s ease, transform 0.8s ease;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
         }
 
-        .section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* 반응형 이미지 */
-        img {
-            max-width: 90%;
+        .header img {
+            width: 100%;
+            max-width: 800px;
             height: auto;
-            border-radius: 8px;
-            margin: 20px 0;
         }
 
-        /* 텍스트 스타일 */
-        h1 {
+        .section {
+            max-width: 800px;
+            margin: 20px 0;
+            padding: 0 10px;
+        }
+
+        .section h1 {
+            color: #091c2b;
             font-size: 2.5em;
             margin-bottom: 0.5em;
-            color: #091c2b;
         }
 
-        p {
-            font-size: 1.2em;
-            line-height: 1.5em;
-            margin-bottom: 1em;
+        .section p {
             color: #bdaba1;
+            line-height: 1.4;
+            margin-bottom: 15px;
         }
 
-        /* 반응형 레이아웃 */
-        @media (max-width: 768px) {
-            h1 { font-size: 2em; }
-            p { font-size: 1em; }
-        }
-
-        /* 하단 섹션 스타일 */
-        .footer-section {
-            background-color: #282c34;
-            color: #ffffff;
-            padding: 20px;
-            margin-top: 20px;
+        .footer {
+            background-color: #333;
+            color: #bdaba1;
+            padding: 15px;
             width: 100%;
+            max-width: 800px;
+            margin-top: 20px;
+            border-radius: 10px;
+            font-size: 0.9em;
+            text-align: left;
         }
 
-        .footer-section h2 {
+        .footer h2 {
             color: #f39d08;
             font-size: 1.2em;
-            margin: 10px 0;
+            margin: 0 0 5px 0;
         }
 
-        .footer-section p, .footer-section a {
-            font-size: 1em;
-            color: #bdaba1;
-            margin: 5px 0;
+        .footer .address {
+            word-break: break-all; /* 긴 텍스트가 화면에 맞게 줄바꿈 */
+        }
+
+        .footer .community {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .footer .community a {
+            color: #61dafb;
             text-decoration: none;
-        }
-
-        .footer-section a:hover {
-            text-decoration: underline;
-            color: #f39d08;
         }
     </style>
 </head>
 <body>
-    <!-- 상단 이미지 섹션 -->
-    <div class="section visible" id="top-image">
-        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/pc_logo.png" alt="Top BUG Image">
+    <div class="header">
+        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/pc_logo.png" alt="Bug Meme Logo">
     </div>
 
-    <!-- 첫 번째 섹션: 메인 소개 -->
-    <div class="section" id="intro">
+    <div class="section">
         <h1>Who is BUG</h1>
-        <p>For the blind, He is the vision.</p>
-        <p>For the hungry, He is the chef.</p>
-        <p>For the thirsty, He is the water.</p>
-        <p>If XXX thinks, I agree.</p>
-        <p>If XXX speaks, I’m listening.</p>
-        <p>If XXX has one fan, it is me.</p>
-        <p>If XXX has no fans, I don’t exist.</p>
-    </div>
-
-    <!-- 중간 이미지 섹션 -->
-    <div class="section" id="middle-image">
-        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/bug_fight.png" alt="Middle BUG Image">
-    </div>
-
-    <!-- 마지막 섹션: 소개 및 설명 -->
-    <div class="section last-section" id="supporters">
+        <p>For the blind, He is the vision.<br>
+           For the hungry, He is the chef.<br>
+           For the thirsty, He is the water.<br>
+           If XXX thinks, I agree.<br>
+           If XXX speaks, I’m listening.<br>
+           If XXX has one fan, it is me.<br>
+           If XXX has no fans, I don’t exist.</p>
+        <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/bug_fight.png" alt="Bug Fight Image" style="width: 100%; max-width: 600px; margin-top: 20px;">
         <p>We carry forward the "spirit of unity among holders" demonstrated during the merger process between Finschia and Klay. We are supporters of both KAIA and BUG_HOLE.</p>
     </div>
 
-    <!-- 하단 계약 주소 및 커뮤니티 섹션 -->
-    <div class="footer-section">
-        <h2>CONTRACT ADDRESS</h2>
-        <p>0x0f9d34aafe97717e4c599c226444ba1e5846a85d</p>
-        <h2>COMMUNITY</h2>
-        <p><a href="https://x.com/BugMemeKAIA" target="_blank">Follow us on X</a></p>
+    <div class="footer">
+        <h2>Contract Address</h2>
+        <p class="address">0x0f9d34aafe97717e4c599c226444ba1e5846a85d</p>
+        
+        <h2>Community</h2>
+        <div class="community">
+            <a href="https://x.com/BugMemeKAIA" target="_blank">X</a>
+            <a href="https://open.kakao.com/o/gvSEsMRg" target="_blank">KAKAO</a>
+            <a href="#">TELEGRAM</a>
+        </div>
     </div>
-
-    <script>
-        // 스크롤 애니메이션
-        const sections = document.querySelectorAll('.section');
-        const revealSection = () => {
-            sections.forEach(section => {
-                const sectionTop = section.getBoundingClientRect().top;
-                if (sectionTop <= window.innerHeight * 0.8) {
-                    section.classList.add('visible');
-                }
-            });
-        };
-
-        window.addEventListener('scroll', revealSection);
-        revealSection();
-    </script>
 </body>
 </html>
