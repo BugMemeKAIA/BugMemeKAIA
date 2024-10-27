@@ -13,7 +13,7 @@
             font-family: 'Arial', sans-serif;
             color: #091c2b;
         }
-        
+
         body {
             background-color: #f0346e;
             color: white;
@@ -65,9 +65,31 @@
             p { font-size: 1em; }
         }
 
-        /* 마지막 섹션 여백 */
-        .last-section {
-            margin-bottom: 2em;
+        /* 하단 섹션 스타일 */
+        .footer-section {
+            background-color: #282c34;
+            color: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .footer-section h2 {
+            color: #f39d08;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .footer-section p, .footer-section a {
+            font-size: 1em;
+            color: #bdaba1;
+            margin: 5px 0;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+            color: #f39d08;
         }
     </style>
 </head>
@@ -96,9 +118,15 @@
 
     <!-- 마지막 섹션: 소개 및 설명 -->
     <div class="section last-section" id="supporters">
-        <h1>We carry forward the "spirit of unity among holders"</h1>
-        <p>demonstrated during the merger process between Finschia and Klay.</p>
-        <p>We are supporters of both KAIA and BUG_HOLE.</p>
+        <p>We carry forward the "spirit of unity among holders" demonstrated during the merger process between Finschia and Klay. We are supporters of both KAIA and BUG_HOLE.</p>
+    </div>
+
+    <!-- 하단 계약 주소 및 커뮤니티 섹션 -->
+    <div class="footer-section">
+        <h2>CONTRACT ADDRESS</h2>
+        <p>0x0f9d34aafe97717e4c599c226444ba1e5846a85d</p>
+        <h2>COMMUNITY</h2>
+        <p><a href="https://x.com/BugMemeKAIA" target="_blank">Follow us on X</a></p>
     </div>
 
     <script>
