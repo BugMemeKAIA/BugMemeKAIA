@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Who is BUG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -97,11 +98,11 @@
     </style>
 </head>
 <body>
-    <div class="header">
+    <div class="header" data-aos="fade-down">
         <img src="https://raw.githubusercontent.com/BugMemeKAIA/BugMemeKAIA/refs/heads/main/pc_logo.png" alt="Bug Meme Logo">
     </div>
 
-    <div class="section">
+    <div class="section" data-aos="fade-up">
         <h1>Who is BUG</h1>
         <p>For the blind, He is the vision.<br>
            For the hungry, He is the chef.<br>
@@ -114,7 +115,7 @@
         <p>We carry forward the "spirit of unity among holders" demonstrated during the merger process between Finschia and Klay. We are supporters of both KAIA and BUG_HOLE.</p>
     </div>
 
-    <div class="footer">
+    <div class="footer" data-aos="fade-up">
         <h2>Contract Address</h2>
         <p class="address">0x0f9d34aafe97717e4c599c226444ba1e5846a85d</p>
         
@@ -130,5 +131,10 @@
             <button class="buy-button">BUY</button>
         </a>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS
+    </script>
 </body>
 </html>
