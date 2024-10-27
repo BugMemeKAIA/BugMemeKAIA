@@ -8,16 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
     <style>
         /* Prevent horizontal scroll on the entire page */
-        html {
+        html, body {
             overflow-x: hidden;
+            width: 100vw; /* Fixes horizontal scroll on mobile */
             margin: 0;
             padding: 0;
         }
 
         body {
             font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #f0346e;
             color: white;
             text-align: center;
@@ -61,23 +60,23 @@
             margin-top: 20px;
             border-radius: 10px;
             font-size: 0.9em;
-            text-align: center; /* Center align the footer content */
+            text-align: center;
         }
 
         .footer h2 {
-            color: #f39d08; /* Orange color for headings */
+            color: #f39d08;
             font-size: 1.2em;
             margin: 0 0 5px 0;
         }
 
         .footer .address {
-            word-break: break-all; /* Allow long addresses to break */
-            font-size: 0.85em; /* Slightly smaller font size for address */
+            word-break: break-all;
+            font-size: 0.85em;
         }
 
         .footer .community {
             display: flex;
-            justify-content: center; /* Center align the community links */
+            justify-content: center;
             gap: 10px;
             margin-top: 10px;
         }
@@ -88,18 +87,18 @@
         }
 
         .buy-button {
-            background-color: #f39d08; /* Orange color for the button */
-            color: #333; /* Gray text color for the button */
+            background-color: #f39d08;
+            color: #333;
             border: none;
             border-radius: 5px;
-            padding: 8px 20px; /* Height reduced */
+            padding: 8px 20px;
             font-size: 1em;
             cursor: pointer;
             margin-top: 15px;
         }
 
         .buy-button:hover {
-            background-color: #e68a00; /* Darker orange on hover */
+            background-color: #e68a00;
         }
     </style>
 </head>
